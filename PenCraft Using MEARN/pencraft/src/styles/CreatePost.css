@@ -1,0 +1,105 @@
+/* Base styles for the create-post form */
+.create-post {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.create-post .container {
+  width: 100%; /* Adjust width as needed, or use max-width for responsiveness */
+  max-width: 800px; /* This should be the maximum width you want your form to be */
+  margin: 0 auto;
+  padding: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow for depth */
+  background-color: #fff; /* Background color for the form container */
+  border-radius: 10px; /* Rounded corners for the form container */
+  transition: box-shadow 0.3s ease; /* Smooth transition for box-shadow effect */
+}
+
+.create-post .container:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+.create-post .form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 0.8rem;
+}
+
+.create-post input,
+.create-post select,
+.create-post .ql-container {
+  padding: 0.6rem 1rem;
+  border-radius: var(--radius-1); /* Ensure this variable is defined or replace with a specific value like '4px' */
+  transition: all 0.3s ease; /* Smooth transition for hover and focus effects */
+}
+
+.create-post input:focus,
+.create-post select:focus,
+.create-post .ql-container:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Highlight input on focus */
+}
+
+.create-post .ql-editor {
+  min-height: 10rem; /* Adjust based on your content needs */
+  max-height: 10rem; /* Keeps the size consistent */
+  overflow-y: auto; /* Allows scrolling within the text editor */
+  background: var(--color-white); /* Ensure this variable is defined or replace with '#fff' */
+}
+
+.create-post .form_error-message {
+  background: var(--color-red); /* Ensure this variable is defined or replace with a specific color */
+  color: var(--color-white); /* Ensure this variable is defined or replace with '#fff' */
+  padding: 0.6rem 1rem;
+  border-radius: var(--radius-1); /* Ensure this variable is defined or replace with a specific value like '4px' */
+  margin-bottom: 1rem;
+}
+
+.create-post button {
+  padding: 0.6rem 1rem;
+  border-radius: var(--radius-1); /* Ensure this variable is defined or replace with a specific value */
+  background: var(--color-primary); /* Ensure this variable is defined or replace with a specific color */
+  color: var(--color-white); /* Ensure this variable is defined or replace with '#fff' */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.create-post button:hover {
+  background-color: var(--color-primary-dark, black); /* Darker background color on hover */
+}
+
+/* Animations */
+@keyframes slideInFromBottom {
+  from {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.create-post .container {
+  animation: slideInFromBottom 0.5s ease forwards;
+}
+
+.create-post input,
+.create-post select,
+.create-post .ql-container,
+.create-post .form_error-message,
+.create-post button {
+  animation: fadeIn 0.5s ease forwards;
+}
