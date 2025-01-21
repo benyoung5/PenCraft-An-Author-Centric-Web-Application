@@ -22,8 +22,6 @@ MongoDB: For secure and efficient database management.
 Live Demo
 Check out the live version here! [Watch my live demo](https://universityofbedfordshire-my.sharepoint.com/personal/benjamin_obi_study_beds_ac_uk/_layouts/15/stream.aspx?id=%2Fpersonal%2Fbenjamin_obi_study_beds_ac_uk%2FDocuments%2FPrecious%2F20250115_162221000_iOS%2EMOV&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Eb41a6bae-e018-4dce-a98c-4be7b7621979)
 
-Screenshots
-Include a few screenshots of your application here.
 
 Let’s Connect!
 If you find this project interesting or would like to collaborate, feel free to reach out!
